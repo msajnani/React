@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {add,sub,mul,div} from "./Calc";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+<>
+  <ul>
+    <li>Sum is {add(42,4)}</li>
+    <li>Sub is {sub(40,4)}</li>
+    <li>Mul is {mul(40,4)}</li>
+    <li>Div is {div(40,4)}</li>
+  </ul>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+</>,
+document.getElementById("root")
+);
